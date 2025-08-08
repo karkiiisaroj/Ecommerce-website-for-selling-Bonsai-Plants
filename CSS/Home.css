@@ -1,0 +1,469 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+#navbar a[href="home.html"] {
+	text-decoration: underline;
+}
+
+#logo {
+	/* Set the width of the element to 150px */
+	width: 150px;
+	/* Set the height of the element to 150px */
+	height: 150px;
+	/* Change the cursor to pointer when hovering over the element */
+	cursor: pointer;
+	/* Make the element have rounded edges with a radius of 50% */
+	border-radius: 50%;
+}
+
+h1 {
+	/* Set the font size to 50px */
+	font-size: 50px;
+	/* Set the line height to 64px */
+	line-height: 64px;
+	/* Set the text color to #222 (dark gray) */
+	color: #222;
+}
+
+h2 {
+	/* Set the font size to 50px */
+	font-size: 50px;
+	/* Set the line height to 64px */
+	line-height: 64px;
+	/* Set the font family to serif */
+	font-family: serif;
+	/* Set the text color to white */
+	color: white;
+}
+
+h4 {
+	/* Set the font size to 50px */
+	font-size: 50px;
+	/* Set the line height to 64px */
+	line-height: 64px;
+	/* Set the text color to #222 (dark gray) */
+	color: #222;
+}
+
+h6 {
+	/* Set the font size to 50px */
+	font-size: 50px;
+	/* Set the line height to 64px */
+	line-height: 64px;
+	/* Set the text color to #222 (dark gray) */
+	color: #222;
+}
+
+p {
+	/* Set the font size to 16px */
+	font-size: 16px;
+	/* Set the text color to #465b52 */
+	color: #465b52;
+	/* Add a margin of 15px at the top and 20px at the bottom */
+	margin: 15px 0 20px 0;
+	/* Justify the text */
+	text-align: justify;
+	/* Set the line height to 1.5 */
+	line-height: 1.5;
+}
+
+
+.section-p1 {
+	/* Add a margin of 40px at the top and bottom */
+	margin: 40px 0;
+}
+
+.section-p1 h2 {
+	/* Add a margin of 25px at the bottom */
+	margin-bottom: 25px 0;
+}
+
+.section-m1 {
+	/* Add a margin of 40px at the top and bottom */
+	margin: 40px 0;
+}
+
+#section-p2 h2 {
+	/* Add a margin of 25px at the top */
+	margin-top: 25px;
+}
+
+body {
+	/* Set the width to 100% */
+	width: 100%;
+	/* Set the background color to #555 (dark gray) */
+	background-color: #555;
+}
+
+
+/*Header Section*/
+#header {
+	/* Display the children elements as a flex container */
+	display: flex;
+	/* Align the children elements vertically to the center */
+	align-items: center;
+	/* Distribute the space between the children elements */
+	justify-content: space-between;
+	/* Add padding of 20px at the top and bottom, and 80px on the left and right */
+	padding: 20px 80px;
+	/* Set the background color to #E3E6F3 */
+	background: #E3E6F3;
+	/* Add a box-shadow with 0px horizontal offset, 5px vertical offset, 15px blur radius, and rgba(0, 0, 0, 0.06) color */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+	/* Set the z-index to 999 */
+	z-index: 999;
+	/* Set the position to sticky, so the element will be sticky when scrolled */
+	position: sticky;
+	/* Set the top position to 0 */
+	top: 0;
+	/* Set the left position to 0 */
+	left: 0;
+}
+
+#navbar {
+	/* Display the children elements as a flex container */
+	display: flex;
+	/* Align the children elements vertically to the center */
+	align-items: center;
+	/* Center the children elements horizontally */
+	justify-content: center;
+}
+
+#navbar li {
+	/* Remove the bullet point from the list item */
+	list-style: none;
+	/* Add a padding of 0px on the top and bottom, and 40px on the left and right */
+	padding: 0 40px;
+}
+
+#navbar li a {
+	/* Remove the underline from the link */
+	text-decoration: none;
+	/* Set the font size to 20px */
+	font-size: 20px;
+	/* Set the font weight to 90px */
+	font-weight: 90px;
+	/* Set the text color to #1a1a1a */
+	color: #1a1a1a;
+	/* Add a transition effect of 0.5 seconds */
+	transition: 0.5s;
+}
+
+#navbar li a:hover {
+	/* Change the text color to #088178 when hovered over */
+	color: #088178;
+}
+
+#hero {
+	/* Sets the height of the element to 100% of the viewport height */
+	height: 100vh;
+	/* Sets the width of the element to 100% of the parent container */
+	width: 100%;
+	/* Sets the background-size to cover the entire element */
+	background-size: cover;
+	/* Positions the background image to the top 25% and right 0 of the element */
+	background-position: top 25% right 0;
+	/* Adds padding of 0 80px to the element */
+	padding: 0 80px;
+	/* Sets the display property to flex, allowing for flexbox layout */
+	display: flex;
+	/* Aligns the child elements to the top of the parent container */
+	align-items: flex-start;
+	/* Centers the child elements within the parent container */
+	justify-content: center;
+	/* Sets the flex-direction to column, causing child elements to stack vertically */
+	flex-direction: column;
+}
+
+#hero h3 {
+	/* Sets the text color to floralwhite */
+	color: floralwhite;
+	/* Sets the font-family to serif */
+	font-family: serif;
+}
+
+#hero button {
+	/* Sets the background-color to #A9A9A9 */
+	background-color: #A9A9A9;
+	/* Sets the text color to #ffffff */
+	color: #ffffff;
+	/* Removes the border from the element */
+	border: 0;
+	/* Adds padding of 14px 80px 14px 65px to the element */
+	padding: 14px 80px 14px 65px;
+	/* Changes the cursor to a pointer when hovering over the element */
+	cursor: pointer;
+	/* Sets the font-weight to 70px */
+	font-weight: 70px;
+	/* Sets the font-size to 20px */
+	font-size: 20px;
+	/* Removes the background-image from the element */
+	background-image: no-repeat;
+	/* Sets the font-family to serif */
+	font-family: serif;
+}
+
+#hero button:hover {
+	/* Changes the text color to #1a1a1a on hover */
+	color: #1a1a1a;
+}
+
+#slider {
+	/* Centers the text within the element */
+	text-align: center;
+}
+
+#slider h2 {
+	/* Sets the text color to white */
+	color: white;
+	/* Adds a margin-bottom of 25px to the element */
+	margin-bottom: 25px;
+}
+
+#slider img {
+	/* Sets the width of the element to 300px */
+	width: 300px;
+	/* Sets the height of the element to 200px */
+	height: 200px;
+	/* Adds a margin of 25px to the element */
+	margin: 25px;
+}
+
+#product1 {
+	/* Centers the text within the element */
+	text-align: center;
+}
+
+#product1 h2 {
+	/* Sets the text color to white */
+	color: white;
+	/* Removes the top margin */
+	margin-top: 0px;
+	/* Removes the bottom margin */
+	margin-bottom: 0px;
+}
+
+
+#product1 .pro {
+	display: inline-block;
+	/*  Display the element as an inline block*/
+	width: 330px;
+	/* Set the width of the element to 330 pixels */
+	margin: 15px;
+	/* Add a margin of 15 pixels around the element. This will create space between the element and other elements on the page. */
+	border: 3px solid rgb(0, 0, 0, 0.02);
+	/* Add a border around the element that is 3 pixels thick */
+	padding: 60px;
+	/*Add padding of 60 pixels around the content inside the element. This will create space between the content and the border. */
+	background-color: #E3E6F3;
+	/*Add some border color */
+	border-radius: 10px;
+	/* Set the height of the element to automatically adjust based on the content inside */
+	height: auto;
+	/* Position the element relative to its parent container */
+	position: relative;
+	/* Move the element 50 pixels from the top */
+	top: 50px;
+	/* Add a transition effect of 0.5 seconds with ease */
+	transition: 0.5s ease;
+}
+
+#product1 .pro:hover {
+	/* Add a box-shadow with an offset of 20px horizontally and vertically, a blur of 30px, and a color of #1a1a1a */
+	box-shadow: 20px 20px 30px #1a1a1a;
+}
+
+#product1 .pro img {
+	/* Set the width to 200px */
+	width: 200px;
+	/* Set the height to 200px */
+	height: 200px;
+	/* Change the cursor to pointer */
+	cursor: pointer;
+	/* Add a border radius of 10px */
+	border-radius: 10px;
+}
+
+#product1 h4 {
+	/* Add padding of 7px at the top */
+	padding-top: 7px;
+	/* Set the font-size to 25px */
+	font-size: 25px;
+	/* Set the font-weight to 700 */
+	font-weight: 700;
+}
+
+div p {
+	/* Set the text color to white */
+	color: white;
+}
+
+#hi {
+	/* Set the width to 20px */
+	width: 20px;
+	/* Set the height to 20px */
+	height: 20px;
+}
+
+button {
+	/* Add a border radius of 20px */
+	border-radius: 20px;
+}
+
+#hero button:hover {
+	/* Change the cursor to pointer */
+	cursor: pointer;
+	/* Change the background color to ghostwhite */
+	background-color: ghostwhite;
+}
+
+#info {
+	/* Display the children elements as a flex container */
+	display: flex;
+	/* Set the background color to aliceblue */
+	background-color: aliceblue;
+	/* Position the element relative to its parent and set the bottom to -15px */
+	position: relative;
+	bottom: -15px;
+}
+
+.info {
+	/* Set the flex property to 1 */
+	flex: 1;
+	/* Add padding of 23px */
+	padding: 23px;
+}
+
+.info h4 {
+	/* Set the font-size to 30px */
+	font-size: 30px;
+	/* Set the font-family to serif */
+	font-family: serif;
+	/* Change the cursor to pointer */
+	cursor: pointer;
+}
+
+.info p {
+	/* Add a margin of -8px */
+	margin: -8px;
+	/* Set the text color to black */
+	color: black;
+	/* Set the font-size to 20px */
+	font-size: 20px;
+	/* Set the font-family to serif */
+	font-family: serif;
+	/* Set the line-height to 1.5 */
+	line-height: 1.5;
+}
+
+#b3 {
+	/* Add a 2px solid lightpink border */
+	border: 2px solid lightpink;
+	/* Set the background color to floralwhite */
+	background-color: floralwhite;
+}
+
+footer {
+	/* Set the background color to #333 */
+	background-color: #333;
+	/* Set the text color to white */
+	color: rgb(255, 255, 255);
+	/* Add padding of 20px */
+	padding: 20px;
+	/* Display the children elements as a flex container */
+	display: flex;
+	/* Set the flex-direction to column */
+	flex-direction: column;
+	/* Align the children elements to the center */
+	align-items: center;
+}
+
+.feedback-section {
+	/* Sets the display property to flex, allowing for flexbox layout */
+	display: flex;
+	/* Sets the flex-direction to column, causing child elements to stack vertically */
+	flex-direction: column;
+	/* Aligns the child elements to the center of the parent container */
+	align-items: center;
+}
+
+.titlefeedback {
+	/* Adds a margin-bottom of 10px to the element */
+	margin-bottom: 10px;
+}
+
+#feedback {
+	/* Sets the width of the element to 100% */
+	width: 100%;
+	/* Adds padding of 60px 85px to the element */
+	padding: 60px 85px;
+	/* Adds a margin of 8px 0 to the element */
+	margin: 8px 0;
+	/* Allows for the element to adjust to the size of the border */
+	box-sizing: border-box;
+	/* Adds a 2px solid #ccc border to the element */
+	border: 2px solid #ccc;
+	/* Adds a 4px border-radius to the element */
+	border-radius: 4px;
+}
+
+.submit {
+	/* Sets the width of the element to 100% */
+	width: 100%;
+	/* Sets the background-color to #4CAF50 */
+	background-color: #4CAF50;
+	/* Sets the text color to white */
+	color: white;
+	/* Adds padding of 14px 20px to the element */
+	padding: 14px 20px;
+	/* Adds a margin of 8px 0 to the element */
+	margin: 8px 0;
+	/* Removes the border from the element */
+	border: none;
+	/* Adds a 4px border-radius to the element */
+	border-radius: 4px;
+	/* Changes the cursor to a pointer when hovering over the element */
+	cursor: pointer;
+}
+
+
+.Media {
+	/* Sets the display property to flex, allowing for flexbox layout */
+	display: flex;
+	/* Removes the default list-style */
+	list-style: none;
+	/* Removes the default margin */
+	margin: 0;
+	/* Removes the default padding */
+	padding: 0;
+}
+
+.Media li {
+	/* Adds a margin of 10px to the element */
+	margin: 10px;
+}
+
+.Media a {
+	/* Sets the text color to white */
+	color: rgb(255, 255, 255);
+	/* Removes the default text-decoration */
+	text-decoration: none;
+	/* Sets the font-size to 14px */
+	font-size: 14px;
+}
+
+.Media a:hover {
+	/* Adds an underline to the text on hover */
+	text-decoration: underline;
+	/* Changes the cursor to a pointer when hovering over the element */
+	cursor: pointer;
+}
+
+.copyright {
+	/* Centers the text within the element */
+	text-align: center;
+}

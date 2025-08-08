@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="description" content="about basic info regarading html">
+    <meta name="keyword" content="html,meta,semantic tags">
+    <meta name="author" content="apil">
+    <meta http-equiv="refresh" content="">
+    <title>form</title>
+</head>
+<style>
+   
+
+    body {
+        background-color: aliceblue;
+        /* Light blue background color */
+        margin: 0;
+    }
+
+    #navbar a[href="Login.html"] {
+        text-decoration: underline;
+    }
+
+    #header {
+        display: flex;
+        /* Display items in a row */
+        align-items: center;
+        /* Center align items vertically */
+        justify-content: space-between;
+        /* Distribute items evenly with equal space between them */
+        padding: 20px 80px;
+        /* Padding for header content */
+        background: #E3E6F3;
+        /* Light gray background color */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        /* Soft shadow */
+        z-index: 999;
+        /* High z-index to keep header on top */
+        position: sticky;
+        /* Keep header at top when scrolling */
+        top: 0;
+        /* Top position */
+        left: 0;
+        /* Left position */
+    }
+
+    #navbar {
+        display: flex;
+        /* Display items in a row */
+        align-items: center;
+        /* Center align items vertically */
+        justify-content: center;
+        /* Center align items horizontally */
+    }
+
+    #navbar li {
+        list-style: none;
+        /* No list style */
+        padding: 0 40px;
+        /* Padding for each list item */
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        /* No text decoration */
+        font-size: 20px;
+        /* Font size */
+        color: #1a1a1a;
+        /* Dark gray text color */
+        transition: 0.5s;
+        /* Transition animation */
+    }
+
+    #navbar li a:hover {
+        color: #088178;
+        /* Light green text color on hover */
+    }
+
+    #logo {
+        width: 150px;
+        /* Width */
+        height: 150px;
+        /* Height */
+        cursor: pointer;
+        /* Cursor as pointer on hover */
+        border-radius: 50%;
+        /* Rounded border */
+    }
+
+    .hero {
+        width: 100%;
+        /* Full width */
+        height: 100vh;
+        /* Full height of viewport */
+        background-color: #f2f2f2;
+        /* Light gray background color */
+        display: flex;
+        /* Display items in a row */
+        align-items: center;
+        /* Center align items vertically */
+        justify-content: center;
+        /* Center align items horizontally */
+    }
+
+
+    .form-box {
+        width: 400px;
+        /* Width of the form box */
+        height: 400px;
+        /* Height of the form box */
+        background-color: #fff;
+        /* Background color */
+        padding: 40px;
+        /* Padding for the content inside the form box */
+        box-sizing: border-box;
+        /* Box sizing for the form box */
+        border-radius: 10px;
+        /* Rounded corners for the form box */
+        box-shadow: 0px 0px 10px #000;
+        /* Shadow for the form box */
+        position: relative;
+        /* Positioning of the form box */
+        bottom: 90px;
+        /* Bottom offset of the form box */
+    }
+
+    #login {
+        text-align: center;
+        /* Center align the text inside the form */
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        /* Margin bottom for the heading */
+        font-size: 30px;
+        /* Font size for the heading */
+    }
+
+    .input-group {
+        display: flex;
+        /* Display as flex */
+        flex-wrap: wrap;
+        /* Flex wrap for the input fields */
+        justify-content: center;
+        /* Center justify the input fields */
+        align-items: center;
+        /* Center align the input fields */
+        margin-bottom: 20px;
+        /* Margin bottom for each input field */
+    }
+
+    input[type='text'],
+    input[type='password'] {
+        width: 100%;
+        /* Full width for the input field */
+        padding: 12px 20px;
+        /* Padding for the input field */
+        margin: 8px 0;
+        /* Margin for the input field */
+        box-sizing: border-box;
+        /* Box sizing for the input field */
+        border-radius: 10px;
+        /* Rounded corners for the input field */
+        border: 1px solid #ccc;
+        /* Border for the input field */
+        outline: none;
+        /* No outline for the input field */
+        font-size: 16px;
+        /* Font size for the input field */
+    }
+
+
+    .Enter {
+        width: 100%;
+        /* Set the width of the button to 100% */
+        background-color: #37872a;
+        /* Set the background color */
+        color: white;
+        /* Set the text color to white */
+        padding: 14px 20px;
+        /* Add padding to the button for better clickability */
+        margin: 8px 0;
+        /* Add margin for spacing between elements */
+        border: none;
+        /* Remove the border for a cleaner look */
+        border-radius: 10px;
+        /* Add a border radius for rounded edges */
+        cursor: pointer;
+        /* Change the cursor to a pointer to indicate button is clickable */
+        font-size: 16px;
+        /* Set the font size for readability */
+        position: relative;
+        /* Set the position to relative for additional styling */
+        top: 30px;
+        /* Shift the button 30px from the top */
+    }
+
+    input[type='submit']:hover {
+        background-color: #000000;
+        /* Change the background color on hover to black */
+    }
+
+    .name {
+        position: relative;
+        /* Set the position to relative for additional styling */
+        bottom: 10px;
+        /* Shift the element 10px from the bottom */
+    }
+
+    nav {
+        text-align: center;
+        /* Center the text within the navbar */
+        margin-top: 20px;
+        /* Add margin top for spacing */
+    }
+
+    nav a {
+        text-decoration: none;
+        /* Remove the underline from links */
+        color: rgb(0, 0, 0);
+        /* Set the text color to black */
+        font-size: 16px;
+        /* Set the font size for readability */
+    }
+
+    .password {
+        position: relative;
+        /* Set the position to relative for additional styling */
+        bottom: 10px;
+        /* Shift the element 10px from the bottom */
+    }
+
+    .create {
+        position: relative;
+        /* Set the position to relative for additional styling */
+        top: 20px;
+        /* Shift the element 20px from the top */
+    }
+
+    footer {
+        background-color: #333;
+        /* Set the background color to dark gray */
+        color: rgb(255, 255, 255);
+        /* Set the text color to white */
+        padding: 20px;
+        /* Add padding for spacing */
+        display: flex;
+        /* Use flexbox for positioning */
+        flex-direction: column;
+        /* Arrange the elements in a column */
+        align-items: center;
+        /* Center the elements horizontally */
+    }
+
+    .feedback-section {
+        display: flex;
+        /* Use flexbox for positioning */
+        flex-direction: column;
+        /* Arrange the elements in a column */
+        align-items: center;
+        /* Center the elements horizontally */
+    }
+
+    .titlefeedback {
+        margin-bottom: 10px;
+        /* Add margin bottom for spacing */
+    }
+
+    #feedback {
+        width: 100%;
+        /* Set the width to 100% */
+        padding: 60px 85px;
+        /* Add padding for spacing */
+        margin: 8px 0;
+        /* Add margin for spacing */
+        box-sizing: border-box;
+        /* Ensure that the padding and border are included in the total width and height */
+        border: 2px solid #ccc;
+        /* Add a 2px solid gray border */
+        border-radius: 4px;
+        /* Round the corners with a 4px border radius */
+    }
+
+    .submit {
+        width: 100%;
+        /* Set the width to 100% */
+        background-color: #4CAF50;
+        /* Set the background color to green */
+        color: white;
+        /* Set the text color to white */
+        padding: 14px 20px;
+        /* Add padding for spacing */
+        margin: 8px 0;
+        /* Add margin for spacing */
+        border: none;
+        /* Remove the border */
+        border-radius: 4px;
+        /* Round the corners with a 4px border radius */
+        cursor: pointer;
+        /* Change the cursor to a pointer when hovering over the button */
+    }
+
+    .Media {
+        display: flex;
+        /* Use flexbox for positioning */
+        list-style: none;
+        /* Remove the list bullet points */
+        margin: 0;
+        /* Remove the margin */
+        padding: 0;
+        /* Remove the padding */
+    }
+
+    .Media li {
+        margin: 10px;
+        /* Add margin for spacing */
+    }
+
+    .Media a {
+        color: rgb(255, 255, 255);
+        /* Set the text color to white */
+        text-decoration: none;
+        /* Remove the underline */
+        font-size: 14px;
+        /* Set the font size for readability */
+    }
+
+    .Media a:hover {
+        text-decoration: underline;
+        /* Add an underline on hover */
+        cursor: pointer;
+        /* Change the cursor to a pointer when hovering over the link */
+    }
+
+    .copyright {
+        text-align: center;
+        /* Center the text */
+    }
+</style>
+
+<body>
+    <section id="header">
+        <img src="../images/Logo.jpg" id="logo">
+        <nav>
+            <ul id="navbar">
+                </div>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Us.html">About Us</a></li>
+                <li><a href="Login.html">Account</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="hero">
+        <div class="form-box" id="login">
+            <h2>log in</h2><br>
+            <form class="input-group" name="myform" onsubmit="validateforms()">
+                username<br><input type="text" name="userName" placeholder="Enter user name"><br><br>
+                password<br><input type="text" name="password" placeholder="Enter password"><br><br>
+                <input type="checkbox" class="name"><span class="password">Show password</span><br><br><br>
+                <input type="submit" value="Log in" class="Enter">
+                <nav class="apil">
+                    <a class="create" href="Register.html">create account?</a>
+                </nav>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="feedback-section">
+            <div class="titlefeedback">Give us your feedback:</div>
+            <input type="text" id="feedback" placeholder="Enter your feedback here">
+            <button class="submit">Submit</button>
+        </div>
+        <ul class="Media">
+            <li> <a href="#">facebook </a></li>
+            <li> <a href="#">Instagram</a></li>
+            <li> <a href="#">Twitter</a></li>
+            <li> <a href="#">Linkedin</a></li>
+        </ul>
+        <div class="copyright">
+            <p>Copyright 2023 | All right reserved. Bonsai Bazzar</p>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript">
+    // Function to validate the form data
+    function validateforms() {
+        // Get the values entered by the user in the form
+        var username = document.forms['myform']['userName'].value;
+        var password = document.forms['myform']['password'].value;
+
+        // Check if either username or password is empty
+        if (username == "" || password == "") {
+            // If either of the fields is empty, show an alert message
+            alert("Please enter email and password to login");
+        } else {
+            // If both fields are filled, show a success message
+            alert("Thank you for submitting this form!");
+        }
+    }
+
+
+    // Function to submit feedback
+    function submitFeedback() {
+        // Get the value of the feedback input field
+        var feedback = document.getElementById("feedback").value;
+        // Check if the feedback input is empty
+        if (feedback === "") {
+            // Show an alert if the input is empty
+            alert("Please enter your feedback before submitting.");
+        } else {
+            // Show an alert with the submitted feedback if the input is not empty
+            alert("Thank you for your feedback: " + feedback);
+        }
+    }
+
+    // Add a click event listener to the "submit" button
+    document.querySelector('.submit').addEventListener("click", submitFeedback);
+
+
+
+</script>
+
+
+
+
+
+</html>

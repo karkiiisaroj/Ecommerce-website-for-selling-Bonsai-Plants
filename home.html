@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonsai Bazaar</title>
+  <link rel="stylesheet" href="./CSS/Home.css" />
+</head>
+
+<body>
+  <section id="header">
+    <img src="images/Logo.jpg" id="logo">
+    <nav>
+      <ul id="navbar">
+        </div>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="pages/Blog.html">Blog</a></li>
+        <li><a href="Pages/product.html">Product</a></li>
+        <li><a href="Pages/Research.html">Research</a></li>
+        <li><a href="Pages/Us.html">About Us</a></li>
+        <li><a href="Pages/Login.html">Account</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <div id="hero">
+    <h2>Purchase Bonsai Plants for<br> Your Home Decor!</h2><br>
+    <h3>Buy now for discounted price</h3>
+    <br>
+    <button id="shop">Shop now</button>
+  </div>
+  <div id="product1">
+    <h2 class="content">Latest Products</h2>
+
+
+    <div class="pro">
+      <img src="images/latest.jpg" alt="">
+      <h5>Juniper</h5>
+      <h4>$40</h4>
+    </div>
+
+    <div class="pro">
+      <img src="images/Ligustrum.webp" alt="">
+      <h5>Ligustrum</h5>
+      <h4>$40</h4>
+    </div>
+
+    <div class="pro">
+      <img src="images/Pomegranate.webp" alt="">
+      <h5>Pomegranate</h5>
+      <h4>$40</h4>
+    </div>
+  </div>
+
+  <div id="product1" class="section-p">
+    <br><br><br>
+    <h2>Featured Products</h2>
+
+    <div class="pro">
+      <img src="images/Ficus.jpg" alt="">
+      <h5>Ficus</h5>
+      <h4>$40</h4>
+    </div>
+
+    <div class="pro">
+      <img src="images/Pinus.webp" alt="">
+      <h5>Pinus</h5>
+      <h4>$40</h4>
+    </div>
+    <div class="pro">
+      <img src="images/Serissa.webp" alt="" />
+      <h5>Serissa</h5>
+      <h4>$40</h4>
+    </div>
+  </div>
+  <div>
+    <br><br><br>
+    <div id="info">
+      <div class="info">
+        <h4>Blog page</h4><br>
+        <p>we have included about bonsai plant,interrelation between bussiness and technology and effects of technology
+          for bussiness in our blog section.Bonsai can play the major rolesfor determining how much you are in love with
+          the plants and especially horticulture.you can have many styles for decorating bonsai plants which may include
+          chokeen style and many more.especially technology has played important role for expanding plants
+          globally.technology and bussiness are interrelated through various social media platforms which helps in
+          promoting our bussiness through global scale.Bonsai has become major source of income for many place.</p>
+      </div>
+      <div class="info">
+        <h4>Research page</h4><br>
+        <p>This is about our research page in which we have included how we carried out research for our webpages.mainly
+          we took reference from two websites for which we have included in our research section in top nav bar of our
+          home page. during our research period we have faced that it is quite harder to implement it in our own which
+          was major challanges for us but we have implement it in our own.we have compared from which websites we have
+          took references from and how we implement it for every link of nav bar</p>
+      </div>
+      <div class="info">
+        <h4>Product</h4>
+        <p>On our product page, you can find bonsai plants for sale at reasonable prices. We have a variety of different
+          bonsai plants to choose from. Each one is grown and cared for by experts to make sure it looks great and is
+          healthy. Whether you're new to bonsai or have been doing it for a long time, you'll find a plant that you
+          like. We have traditional Japanese styles and newer, creative designs. Check out our collection and find a
+          bonsai plant that fits your taste and budget.</p>
+      </div>
+      <div class="info">
+        <h4>About us</h4>
+        <p>This is about personal details of every member in our team every individual have done their task perfectly in
+          our group we have our team leader as saroj who handled our home page using html,css and javascript and we have
+          our best team member as apil who handled our form section,another as arbit who handled our entire product page
+          and about us and last is our shreyansh who handled our blog page perfectly overall team was good as well
+          experienced all people handled every task properly</p>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="feedback-section">
+        <div class="titlefeedback">Give us your feedback:</div>
+        <input type="text" id="feedback" placeholder="Enter your feedback here">
+        <button class="submit">Submit</button>
+      </div>
+      <ul class="Media">
+        <li> <a href="#">facebook </a></li>
+        <li> <a href="#">Instagram</a></li>
+        <li> <a href="#">Twitter</a></li>
+        <li> <a href="#">Linkedin</a></li>
+      </ul>
+      <div class="copyright">
+        <p>Copyright 2023 | All right reserved. Bonsai Bazzar</p>
+      </div>
+    </footer>
+</body>
+<script type="text/javascript">
+  document.getElementById("shop").addEventListener("click", function () {
+    // Redirect to the "product.html" page when the button is clicked
+    window.location.href = "./pages/product.html";
+  });
+
+
+
+
+
+
+
+
+  // images to be displayed in the background
+  var images = ["images/cover.jpg", "images/bonsai4.jpg", "images/bonsaislide.jpg"];
+
+  // Variable to keep track of the current image
+  var currentImage = 0;
+
+  // Set the background image of the "hero" element to the first image in the array
+  document.getElementById("hero").style.backgroundImage = "url(" + images[currentImage] + ")";
+
+
+  setInterval(function () {
+    // Increment the current image counter
+    currentImage++;
+    // If the current image is the last image, set the current image back to 0
+    if (currentImage >= images.length) {
+      currentImage = 0;
+    }
+    // Set the background image of the "hero" element to the next image in the array
+    document.getElementById("hero").style.backgroundImage = "url(" + images[currentImage] + ")";
+  }, 1500); // Change the background image every 1.5 seconds
+
+
+
+
+
+
+
+
+
+  // Function to submit feedback
+  function submitFeedback() {
+    // Get the value of the feedback input field
+    var feedback = document.getElementById("feedback").value;
+    // Check if the feedback input is empty
+    if (feedback === "") {
+      // Show an alert if the input is empty
+      alert("Please enter your feedback before submitting.");
+    } else {
+      // Show an alert with the submitted feedback if the input is not empty
+      alert("Thank you for your feedback: " + feedback);
+    }
+  }
+  // Add a click event listener to the "submit" button
+  document.querySelector('.submit').addEventListener("click", submitFeedback);
+
+
+</script>
+
+</html>

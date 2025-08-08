@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+       
+        #logo {
+            width: 150px;
+            /* Set the width of the logo */
+            height: 150px;
+            /* Set the height of the logo */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+            border-radius: 50%;
+            /* Make the logo round */
+        }
+
+        #navbar a[href="us.html"] {
+            text-decoration: underline;
+        }
+
+        #header {
+            display: flex;
+            /* Display the header as a flex container */
+            align-items: center;
+            /* Align the items in the header to the center */
+            justify-content: space-between;
+            /* Justify the content with equal space between */
+            padding: 20px 80px;
+            /* Add some padding to the header */
+            background: #E3E6F3;
+            /* Set the background color of the header */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            /* Add a shadow to the header */
+            z-index: 999;
+            /* Set a high z-index to keep the header on top */
+            position: sticky;
+            /* Make the header sticky */
+            top: 0;
+            /* Position the header at the top */
+            left: 0;
+            /* Position the header at the left */
+        }
+
+        #navbar {
+            display: flex;
+            /* Display the navbar as a flex container */
+            align-items: center;
+            /* Align the items in the navbar to the center */
+            justify-content: center;
+            /* Justify the content to the center */
+        }
+
+        #navbar li {
+            list-style: none;
+            /* Remove bullet points */
+            padding: 0 40px;
+            /* Add some padding to the list items */
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 20px;
+            /* Set the font size */
+            color: #1a1a1a;
+            /* Set the text color */
+            transition: 0.5s;
+            /* Add a transition effect */
+        }
+
+        #navbar li a:hover {
+            color: #088178;
+            /* Change the text color on hover */
+        }
+
+        .about-us-container {
+            display: flex;
+            /* Display the about-us-container as a flex container */
+        }
+
+        .about-us-image {
+            width: 35%;
+            /* Set the width of the about-us-image to 35% */
+        }
+
+        .about-us-text {
+            width: 50%;
+            /* sets width to 50% of container */
+            padding: 0px 20px;
+            /* adds padding of 0px on top/bottom and 20px on left/right */
+            text-align: center;
+            /* centers text within the container */
+            font-size: large;
+            /* sets font size to "large" */
+            position: relative;
+            /* sets position to "relative" for positioning of left property */
+            left: 10%;
+            /* moves element to the right by 10% of its container */
+        }
+
+        h2 {
+            position: relative;
+            /* sets position to "relative" for positioning of top property */
+            top: 40px;
+            /* moves element down 40px */
+            width: 440px;
+            /* sets width to 440px */
+            margin: auto;
+            /* centers element horizontally within its container */
+            font-size: 40px;
+            /* sets font size to 40px */
+            padding: 20px;
+            /* adds 20px of padding on all sides */
+        }
+
+        .portfolio-container {
+            display: flex;
+            /* sets display property to "flex" for flexbox layout */
+            flex-wrap: wrap;
+            /* allows items to wrap onto a new line if necessary */
+        }
+
+        .portfolio-item {
+            width: 40%;
+            /* sets width to 40% of container */
+            padding: 20px;
+            /* adds 20px of padding on all sides */
+        }
+
+        .image {
+            width: 50%;
+            /* sets width to 50% of container */
+            position: relative;
+            /* sets position to "relative" for positioning of left property */
+            left: 110px;
+            /* moves element to the right by 110px */
+        }
+
+        .Saroj {
+            width: 53%;
+            /* sets width to 53% of container */
+            position: relative;
+            /* sets position to "relative" for positioning of left and height property */
+            left: 110px;
+            /* moves element to the right by 110px */
+            height: 385px;
+            /* sets element height to 385px */
+        }
+
+        .shereyansh {
+            position: relative;
+            /* sets position to "relative" for positioning of top and left property */
+            top: 10px;
+            /* moves element down by 10px */
+            width: 55%;
+            /* sets width to 55% of container */
+            left: 100px;
+            /* moves element to the right by 100px */
+        }
+
+
+        .intro {
+            display: flex;
+            /* sets display property to "flex" for flexbox layout */
+            flex-direction: column;
+            /* sets flex direction to "column" for vertical layout */
+            align-items: center;
+            /* aligns items horizontally at the center */
+            text-align: center;
+            /* centers text within the container */
+            margin-top: 20px;
+            /* adds a margin of 20px on top of the element */
+            font-size: 20px;
+            /* sets font size to 20px */
+        }
+
+        .show-portfolio-button {
+            background-color: rgb(151, 151, 188);
+            /* sets background color to a shade of purple */
+            color: white;
+            /* sets text color to white */
+            padding: 10px 20px;
+            /* adds 10px padding on top/bottom and 20px padding on left/right */
+            margin-top: 20px;
+            /* adds a margin of 20px on top of the element */
+            display: block;
+            /* sets display property to "block" for full width layout */
+            text-align: center;
+            /* centers text within the button */
+            font-size: 20px;
+            /* sets font size to 20px */
+            text-decoration: none;
+            /* removes text decoration */
+            width: 135px;
+            /* sets width to 135px */
+            position: relative;
+            /* sets position to "relative" for positioning of left property */
+            left: 100px;
+            /* moves element to the right by 100px */
+            cursor: pointer;
+            /* changes cursor to "pointer" when hovering over the button */
+        }
+
+        #Saroj,
+        #arbit,
+        #apil,
+        #shreyansh {
+            font-size: 20px;
+            /* sets font size to 20px */
+        }
+
+        footer {
+            background-color: #333;
+            /* sets background color to dark gray */
+            color: rgb(255, 255, 255);
+            /* sets text color to white */
+            padding: 20px;
+            /* adds 20px of padding on all sides */
+            display: flex;
+            /* sets display property to "flex" for flexbox layout */
+            flex-direction: column;
+            /* sets flex direction to "column" for vertical layout */
+            align-items: center;
+            /* aligns items horizontally at the center */
+        }
+
+        .feedback-section {
+            display: flex;
+            /* sets display property to "flex" for flexbox layout */
+            flex-direction: column;
+            /* sets flex direction to "column" for vertical layout */
+            align-items: center;
+            /* aligns items horizontally at the center */
+        }
+
+        .titlefeedback {
+            margin-bottom: 10px;
+            /* adds a margin of 10px below the element */
+        }
+
+
+        /* Feedback container */
+        #feedback {
+            width: 100%;
+            /* Full width */
+            padding: 60px 85px;
+            /* Padding for content */
+            margin: 8px 0;
+            /* Margin for spacing */
+            box-sizing: border-box;
+            /* Include padding and border in total width */
+            border: 2px solid #ccc;
+            /* Light gray border */
+            border-radius: 4px;
+            /* Rounded border corners */
+        }
+
+        /* Submit button style */
+        .submit {
+            width: 100%;
+            /* Full width */
+            background-color: #4CAF50;
+            /* Green background */
+            color: white;
+            /* White text */
+            padding: 14px 20px;
+            /* Padding for button */
+            margin: 8px 0;
+            /* Margin for spacing */
+            border: none;
+            /* No border */
+            border-radius: 4px;
+            /* Rounded border corners */
+            cursor: pointer;
+            /* Cursor as pointer on hover */
+        }
+
+        .Media {
+            display: flex;
+            /* Display items in a row */
+            list-style: none;
+            /* No list style */
+            margin: 0;
+            /* No margin */
+            padding: 0;
+            /* No padding */
+        }
+
+        .Media li {
+            margin: 10px;
+            /* Margin for spacing */
+        }
+
+        .Media a {
+            color: rgb(255, 255, 255);
+            /* White text color */
+            text-decoration: none;
+            /* No text decoration */
+            font-size: 14px;
+            /* Font size */
+        }
+
+        .Media a:hover {
+            text-decoration: underline;
+            /* Underline on hover */
+            cursor: pointer;
+            /* Cursor as pointer on hover */
+        }
+
+        .copyright {
+            text-align: center;
+            /* Center align text */
+        }
+
+        body {
+            background-color: aliceblue;
+            /* Light blue background color */
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <img src="../images/Logo.jpg" id="logo">
+        <nav>
+            <ul id="navbar">
+                </div>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="us.html">About Us</a></li>
+                <li><a href="Login.html">Account</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="about-us-container">
+        <img src="../images/Team.png" class="about-us-image">
+        <div class="about-us-text">
+            <h1>Our Mission</h1>
+            <p>Welcome to the C8 team at Islington College! We are a dedicated group of
+                students who have come together to create a website for bonsai plants. Our team
+                is made up of individuals with a passion for design, coding, and bonsai. We have worked
+                hard to create a user-friendly website that is filled with valuable information and resources
+                for bonsai enthusiasts of all skill levels. Whether you're new to bonsai or have been practicing
+                for years, our website is the perfect place to learn more about this fascinating hobby. From tips
+                on how to care for your bonsai trees to information on the best tools and techniques, our website
+                has something for everyone. We are proud of the website we have created and we hope that you will
+                find it both informative and enjoyable. Thank you for visiting our website and we look forward to
+                sharing our passion for bonsai with you. <br><br><br>
+
+                Our Mission is to provide our
+                customers with the highest quality bonsai plants and related products, while also promoting the art and
+                tradition of bonsai cultivation. We believe that bonsai plants are not just a simple form of
+                horticulture,
+                but rather a form of living art that requires skill, patience, and dedication to cultivate. Our website
+                offers a wide variety of bonsai plants, from classic Juniper and Maple varieties to more unique and
+                exotic
+                species, as well as all the tools and accessories you need to care for them.</p>
+        </div>
+    </div>
+    <h2>Meet Our Team Member</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="../images/Arbit.png" class="image">
+            <div class="intro">
+                <p>
+                    Hi, My name is Arbit Bhandari.I am currently enrolled in Islington College, where I am pursuing
+                    my education in the field of Computing.Our goal is to go above and beyond our clients'
+                    expectations while fulfilling our aim to deliver high-quality [products/services].
+                </p>
+            </div>
+            <a class="show-portfolio-button" onclick="saroj()">Show Portfolio</a>
+            <div>
+                <div id="Saroj" style="display: none;">
+                    <h1>Leader of this Group</h1>
+                    <p>Position: Team Leader</p>
+                    <p>Name: Arbit Bhandari</p>
+                    <p>Education:+2 in Computer Science</p>
+                    <p>Skills: JavaScript, HTML/CSS</p>
+                    <p>Email: arbitbhandari17@gmail.com</p>
+                    <p>Contact no:9881224111</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="../images/Saroj.png" class="Saroj">
+            <div class="intro">
+                <p> Hi, Greetings, I'm Saroj Karki also the team member of this course work group. Islington College
+                    is where I am presently enrolled to further my education in the subject of computing. Our
+                    purpose is to produce high-quality products while exceeding the expectations of our customers.</p>
+            </div>
+            <a class="show-portfolio-button" onclick="arbit()">Show Portfolio</a>
+            <div id="arbit" style="display: none;">
+                <h1>Member of this Group</h1>
+                <p>Position: Team Member</p>
+                <p>Name: Saroj Karki</p>
+                <p> Education:+2 in Computer Science</p>
+                <p> Skills:JavaScript, HTML/CSS </p>
+                <p> Email:sarojkarki600@gmail.com</p>
+                <p> Contact no:9863186537</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="../images/Apil.png" class="image">
+            <div class="intro">
+                <p>Hi, My name is Apil Thapa.I am currently Studing in Islington College, where I am pursuing my
+                    education in the field of Computing.Our goal is to go I have Basic Knowledge in HTML & CSS. I
+                    love Coding and Making Websites. My Aim is To Provide high-quality Products To Customers</p>
+            </div>
+            <a class="show-portfolio-button" onclick="apil()">Show Portfolio</a>
+            <div id="apil" style="display:none">
+                <h1>Member of this Group</h1>
+                <p>Position: Team Member</p>
+                <p>Name: Apil Thapa</p>
+                <p> Education:+2 in Computer Science</p>
+                <p> Skills:JavaScript, HTML/CSS </p>
+                <p> Email:apilthapa87@gmail.com</p>
+                <p> Contact no:9867004146</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="../images/sh.png" class="shereyansh">
+            <div class="intro">
+                <p>Hi, Shreyansh Shrestha is my name. Islington College is where I am currently enrolled to further
+                    my computer science education. While achieving our purpose of providing high-quality products &
+                    services, our goal is to surpass our clients' expectations.</p>
+            </div>
+            <a class="show-portfolio-button" onclick="shreyansh()">Show Portfolio</a>
+            <div id="shreyansh" style="display: none;">
+                <h1>Member of this Group</h1>
+                <p>Position: Team Member</p>
+                <p>Name: Shreyansh Shrestha</p>
+                <p> Education:+2 in Computer Science</p>
+                <p> Skills:JavaScript, HTML/CSS </p>
+                <p> Email:shrestha246810@gmail.com</p>
+                <p> Contact no:9863811729</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="feedback-section">
+            <div class="titlefeedback">Give us your feedback:</div>
+            <input type="text" id="feedback" placeholder="Enter your feedback here">
+            <button class="submit">Submit</button>
+        </div>
+        <ul class="Media">
+            <li> <a href="#">facebook </a></li>
+            <li> <a href="#">Instagram</a></li>
+            <li> <a href="#">Twitter</a></li>
+            <li> <a href="#">Linkedin</a></li>
+        </ul>
+        <div class="copyright">
+            <p>Copyright 2023 | All right reserved. Bonsai Bazzar</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../JavaScript/Us.js">
+
+</script>
+
+</html>

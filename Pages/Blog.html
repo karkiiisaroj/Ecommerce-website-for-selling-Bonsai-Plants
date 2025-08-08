@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Bazaar</title>
+</head>
+<style>
+    body {
+        /* Sets the background color to aliceblue */
+        background-color: aliceblue;
+        /* Hides the horizontal scrollbar */
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    #navbar a[href="Blog.html"] {
+        text-decoration: underline;
+    }
+
+    #logo {
+        /* Sets the width of the element to 150px */
+        width: 150px;
+        /* Sets the height of the element to 150px */
+        height: 150px;
+        /* Changes the cursor to a pointer when hovering over the element */
+        cursor: pointer;
+        /* Rounds the edges of the element to create a circular shape */
+        border-radius: 50%;
+    }
+
+    #header {
+        /* Display the children elements as a flex container */
+        display: flex;
+        /* Align the children elements vertically to the center */
+        align-items: center;
+        /* Distribute the space between the children elements */
+        justify-content: space-between;
+        /* Add padding of 20px at the top and bottom, and 80px on the left and right */
+        padding: 20px 80px;
+        /* Set the background color to #E3E6F3 */
+        background: #E3E6F3;
+        /* Add a box-shadow with 0px horizontal offset, 5px vertical offset, 15px blur radius, and rgba(0, 0, 0, 0.06) color */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        /* Set the z-index to 999 */
+        z-index: 999;
+        /* Set the position to sticky, so the element will be sticky when scrolled */
+        position: sticky;
+        /* Set the top position to 0 */
+        top: 0;
+        /* Set the left position to 0 */
+        left: 0;
+    }
+
+    #navbar {
+        /* Display the children elements as a flex container */
+        display: flex;
+        /* Align the children elements vertically to the center */
+        align-items: center;
+        /* Center the children elements horizontally */
+        justify-content: center;
+    }
+
+    #navbar li {
+        /* Remove the bullet point from the list item */
+        list-style: none;
+        /* Add a padding of 0px on the top and bottom, and 40px on the left and right */
+        padding: 0 40px;
+    }
+
+    #navbar li a {
+        /* Remove the underline from the link */
+        text-decoration: none;
+        /* Set the font size to 20px */
+        font-size: 20px;
+        /* Set the font weight to 90px */
+        font-weight: 90px;
+        /* Set the text color to #1a1a1a */
+        color: #1a1a1a;
+        /* Add a transition effect of 0.5 seconds */
+        transition: 0.5s;
+    }
+
+    #navbar li a:hover {
+        /* Change the text color to #088178 when hovered over */
+        color: #088178;
+    }
+
+    #blog-content {
+        /* Adds a margin of 20px to the element */
+        margin: 20px;
+    }
+
+    #blog-content .container {
+        /* Centers the text within the element */
+        text-align: center;
+        /* Adds a margin-bottom of 20px to the element */
+        margin-bottom: 20px;
+    }
+
+    #blog-content .container img {
+        /* Sets the width of the element to 100% */
+        width: 100%;
+        /* Sets the height of the element to 100% of the viewport height */
+        height: 100vh;
+    }
+
+    #blog-content h4 {
+        /* Adds a margin-top of 20px to the element */
+        margin-top: 20px;
+        /* Centers the text within the element */
+        text-align: center;
+        /* Changes the text to uppercase */
+        text-transform: uppercase;
+        /* Adds 2px of spacing between each letter */
+        letter-spacing: 2px;
+        /* Makes the text bold */
+        font-weight: bold;
+        /* Sets the font-size to 30px */
+        font-size: 30px;
+    }
+
+    #blog-content p {
+        /* Sets the line-height to 1.5 */
+        line-height: 1.5;
+        /* Justifies the text within the element */
+        text-align: justify;
+        /* Adds a margin-bottom of 20px to the element */
+        margin-bottom: 20px;
+        /* Sets the font-size to x-large */
+        font-size: x-large;
+    }
+
+    #blog-content b {
+        /* Sets the display property to block, making the element a block-level element */
+        display: block;
+        /* Sets the font-size to large */
+        font-size: large;
+        /* Adds a margin-bottom of 10px to the element */
+        margin-bottom: 10px;
+    }
+
+    #blog-content .image {
+        /* Adds a margin-top of 20px to the element */
+        margin-top: 20px;
+        /* Centers the text within the element */
+        text-align: center;
+    }
+
+    #blog-content .image img {
+        /* Sets the width of the element to 390px */
+        width: 390px;
+        /* Sets the height of the element to 390px */
+        height: 390px;
+        /* Sets the position of the element to relative */
+        position: relative;
+        /* Shifts the element 45px to the left */
+        left: 45px;
+        /* Shifts the element 35px upwards */
+        top: 35px;
+    }
+
+    #blog-content .try {
+        /* Adds a margin-top of 20px to the element */
+        margin-top: 20px;
+        /* Justifies the text within the element */
+        text-align: justify;
+        /* Changes the list-style to decimal */
+        list-style: decimal;
+        /* Adds a margin-left of 30px to the element */
+        margin-left: 30px;
+        /* Sets the font-size to x-large */
+        font-size: x-large;
+        /* Sets the position of the element to relative */
+        position: relative;
+        /* Shifts the element 37px upwards */
+        top: -37px;
+    }
+
+    .left {
+        /* Aligns the text to the left */
+        text-align: left;
+    }
+
+    footer {
+        /* Sets the background color to #333 */
+        background-color: #333;
+        /* Sets the text color to white */
+        color: rgb(255, 255, 255);
+        /* Adds padding of 20px to the element */
+        padding: 20px;
+        /* Sets the display property to flex, allowing for flexbox layout */
+        display: flex;
+        /* Sets the flex-direction property to column, stacking child elements vertically */
+        flex-direction: column;
+        /* Aligns the child elements to the center of the parent container */
+        align-items: center;
+    }
+
+    .feedback-section {
+        /* Sets the display property to flex, allowing for flexbox layout */
+        display: flex;
+        /* Sets the flex-direction property to column, stacking child elements vertically */
+        flex-direction: column;
+        /* Aligns the child elements to the center of the parent container */
+        align-items: center;
+    }
+
+    .titlefeedback {
+        /* Adds a margin-bottom of 10px to the element */
+        margin-bottom: 10px;
+    }
+
+    .hello {
+        /* Floats the element to the right */
+        float: right;
+        /* Adds a border-radius of 30px to the element */
+        border-radius: 30px;
+        /* Adds a padding-right of 100px to the element */
+        padding-right: 100px;
+        /* Sets the width of the element to 390px */
+        width: 390px;
+        /* Sets the height of the element to 390px */
+        height: 390px;
+        /* Sets the position of the element to relative */
+        position: relative;
+        /* Shifts the element 35px upwards */
+        top: 35px;
+        /* Shifts the element 115px to the left */
+        left: 115px;
+    }
+
+    #feedback {
+        /* Sets the width of the element to 100% */
+        width: 100%;
+        /* Adds padding of 60px 85px to the element */
+        padding: 60px 85px;
+        /* Adds a margin of 8px 0 to the element */
+        margin: 8px 0;
+        /* Allows the element to adjust to the size of the content within it */
+        box-sizing: border-box;
+        /* Adds a 2px solid #ccc border to the element */
+        border: 2px solid #ccc;
+        /* Adds a border-radius of 4px to the element */
+        border-radius: 4px;
+    }
+
+    .submit {
+        /* Sets the width of the element to 100% */
+        width: 100%;
+        /* Sets the background-color of the element to #4CAF50 */
+        background-color: #4CAF50;
+        /* Sets the text color of the element to white */
+        color: white;
+        /* Adds padding of 14px 20px to the element */
+        padding: 14px 20px;
+        /* Adds a margin of 8px 0 to the element */
+        margin: 8px 0;
+        /* Removes the border from the element */
+        border: none;
+        /* Adds a border-radius of 4px to the element */
+        border-radius: 4px;
+        /* Changes the cursor to a pointer when hovering over the element */
+        cursor: pointer;
+    }
+
+    .Media {
+        /* Sets the display property to flex, allowing for flexbox layout */
+        display: flex;
+        /* Removes the default list-style */
+        list-style: none;
+        /* Removes the margin */
+        margin: 0;
+        /* Removes the padding */
+        padding: 0;
+    }
+
+
+    .Media li {
+        /* Adds a margin of 10px to the element */
+        margin: 10px;
+    }
+
+    .Media a {
+        /* Sets the text color to white */
+        color: rgb(255, 255, 255);
+        /* Removes the text decoration */
+        text-decoration: none;
+        /* Sets the font-size to 14px */
+        font-size: 14px;
+    }
+
+    .Media a:hover {
+        /* Adds an underline to the text */
+        text-decoration: underline;
+        /* Changes the cursor to a pointer */
+        cursor: pointer;
+    }
+
+    .bonsai {
+        /* Sets the position of the element to relative */
+        position: relative;
+        /* Shifts the element 50px downwards */
+        top: 50px;
+    }
+
+    .conclusion {
+        font-size: x-large;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    h1 {
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <section id="header">
+        <img src="../images/Logo.jpg" id="logo">
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Us.html">About Us</a></li>
+                <li><a href="Login.html">Account</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="blog-content">
+        <div class="container">
+            <img src="../images/bonsai1.jpg">
+        </div>
+        <h4 class="bonsai">Bonsai plants</h4><br>
+        <p>Bonsai are the small plants that is grown in a container and presented in such a way that makes it look even
+            more preetier than the plants that are grown in wild.It is a traditional japenese art It became more widely
+            enjoyed around three centuries later, during the Edo period (1603–1867). Growing bonsai has been a hobby for
+            many japenese people and became one of the gesture to show love towards nature.</p>
+        <img src="../images/bonsai2.jpg" class="hello">
+        </div>
+        <h4>Types of bonsai</h4>
+        <b>Chokkan style</b>-<p class="left"> It is a straight-forward style that most resembles a regular full sized
+            tree in its mature native state.The aim of the style is to closely recreate a ‘perfect’ version of the
+            natural form of your bonsai tree variety, in a miniaturized version.</p>
+        <br>
+        <br>
+        <b>Fukinagashi Style</b>-<p class="left">This style is one of the most dramatic bonsai style but also difficult
+            to achieve. it takes lots of time and dedication so it is rarely seen. It is quiet similiar to the slanting
+            style expect for appearence. Naturally it is found in exposed environments such as on mountain crests,
+            ridges or coastal areas.</p>
+        <br>
+        <br>
+        <b>Moyogi style</b>-<p class="left"> It is also popurarly known as Japanese white pine which is evergreen plant
+            for the family.It is basically grown in mountain region.It has been cultivated in Japan and China <br> for
+            centuries. to grow this one need lots of patience because to be fully grown it can take upto 10years.</p>
+        <br>
+        <br>
+        <b>Shakan style</b>-<p class="left"> It is also called Slanting Bonsai Style it is one of the popular style hich
+            emulates the ideals of a tree in nature which has been buffeted by the natural elements such as wind and
+            storms.</p>
+
+
+        <div class="container"><img src="../images/business.jpg"></div>
+        <h4>Daily life and business inter-relationship.</h4>
+        <p> Daily life and Business are inter-related with each other directly or indirectly.I believe entrepreneur
+            often plays a significant role in people's daily life because they provides people with
+            food,shelter,transportation and many more.Business can be important source of employment.It has capacity to
+            provide overall quality development of humans.</p>
+        <br><br><br>
+
+        <div class="container"><img src="../images/technology.jpg"></div>
+        <h4>How technology has affected daily life and business.</h4>
+        <p> Technology has played a significant role in both daily life and business. Technology has brought revolution
+            in they way of how people consume social medias. The whole world is coverting into digital.everything is
+            going digital.From ordering food to ordering clothes online, bookoing the tickets of bus,plane,ships just
+            with one click technology has come up the long way and plays an important role in daily life.it has helped
+            people connecting to each other by living in different corner of the world.</p>
+        <P class="media"><b class="top">Everything has its own advantages and disadvantages
+                here are some points that clarify how technology has affected our daily life which includes</b>
+            <br>
+        <div class="try">
+            i. Better communication<br>
+            ii. decrease privacy<br>
+            iii. online shoppings<br>
+            iv. working in an efficient way<br>
+            v. decrease human efforts<br>
+            rise in accuracy.<br></P>
+            <br>
+        </div>
+        <div class="container"><img src="../images/Bonsai3.jpg"></div>
+        <h4>How technology has affected business</h4>
+        <p> 4.9Billion people use internet and use different technologies for a start-up. Technology plays a vital role
+            in business aswell. When technology becomes more advance,it's role with the businesses will continue to
+            grow. Technology has revolutionized business. It is more easy and reliable for companies to do business
+            across the world with online marketing website or selling products online by creating e-commerce webpage. It
+            is even more easier to store thousands of data of employee, product or different paperwork as well as other
+            important data'sof the organization and can be stored forever which is 100% safe.<span>From designing a
+                company logo to desiging a product technology has brought a big impact in business in today's
+                context.</span></p>
+        </div>
+        <h1>Conclusion</h1>
+        <div class="conclusion">
+            In conclusion, technology has had a profound impact on both daily life and business. From better
+            communication and online shopping to increased efficiency and decreased human effort, technology has changed
+            the way we live and work. Bonsai is a traditional Japanese art form of growing miniature trees in containers
+            and it has different styles such as Chokkan, Fukinagashi, Moyogi and Shakan. Growing bonsai requires
+            patience and dedication, making it a hobby for nature lovers.
+        </div>
+    </section>
+
+    <footer>
+        <div class="feedback-section">
+            <div class="titlefeedback">Give us your feedback:</div>
+            <input type="text" id="feedback" placeholder="Enter your feedback here">
+            <button class="submit">Submit</button>
+        </div>
+        <ul class="Media">
+            <li> <a href="#">facebook </a></li>
+            <li> <a href="#">Instagram</a></li>
+            <li> <a href="#">Twitter</a></li>
+            <li> <a href="#">Linkedin</a></li>
+        </ul>
+        <div class="copyright">
+            <p>Copyright 2023 | All right reserved. Bonsai Bazzar</p>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript">
+    // Function to submit feedback
+    function submitFeedback() {
+        // Get the value of the feedback input field
+        var feedback = document.getElementById("feedback").value;
+        // Check if the feedback input is empty
+        if (feedback === "") {
+            // Show an alert if the input is empty
+            alert("Please enter your feedback before submitting.");
+        } else {
+            // Show an alert with the submitted feedback if the input is not empty
+            alert("Thank you for your feedback: " + feedback);
+        }
+    }
+
+    // Add a click event listener to the "submit" button
+    document.querySelector('.submit').addEventListener("click", submitFeedback);
+
+
+</script>
+
+</html>

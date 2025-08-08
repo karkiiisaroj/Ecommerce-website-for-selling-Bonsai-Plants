@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+</head>
+<style>
+    #logo {
+        width: 150px;
+        /* Set the width and height of the logo to 150px */
+        height: 150px;
+        /* Set the width and height of the logo to 150px */
+        cursor: pointer;
+        /* Change cursor to pointer */
+        border-radius: 50%;
+        /* Give the logo a circular shape */
+    }
+
+    #navbar a[href="Research.html"] {
+        text-decoration: underline;
+    }
+
+    #header {
+        display: flex;
+        /* Create a flex container for the header */
+        align-items: center;
+        /* Align items in the center */
+        justify-content: space-between;
+        /* Justify the space between them */
+        padding: 20px 80px;
+        /* Add padding */
+        background: #E3E6F3;
+        /* Add background color */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        /* Add box shadow */
+        z-index: 999;
+        /* Add z-index */
+        position: sticky;
+        /* Position it to stick to the top and left of the page */
+        top: 0;
+        /* Position it to stick to the top and left of the page */
+        left: 0;
+        /* Position it to stick to the top and left of the page */
+    }
+
+    #navbar {
+        display: flex;
+        /* Create a flex container for the navbar */
+        align-items: center;
+        /* Align items in the center */
+        justify-content: center;
+        /* Justify the space between them */
+    }
+
+    #navbar li {
+        list-style: none;
+        /* Remove bullet points */
+        padding: 0 40px;
+        /* Add padding */
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        /* Remove text decoration */
+        font-size: 20px;
+        /* Set font size */
+        color: #1a1a1a;
+        /* Set color */
+        transition: 0.5s;
+        /* Add a transition */
+    }
+
+    #navbar li a:hover {
+        color: #088178;
+        /* Change color on hover */
+    }
+
+    .home {
+        width: 70%;
+        /* Set width */
+        margin-right: 30px;
+        /* Add margin */
+    }
+
+
+    .login {
+        width: 70%;
+        /* Set width */
+        margin-right: 30px;
+        /* Add margin */
+    }
+
+    .about {
+        width: 70%;
+        /* Set width */
+        margin-right: 30px;
+        /* Add margin */
+    }
+
+    .product {
+        width: 70%;
+        /* Set width */
+        margin-right: 30px;
+        /* Add margin */
+    }
+
+    .slider {
+        width: 70%;
+        /* Set width */
+        margin-right: 30px;
+        /* Add margin */
+    }
+
+    footer {
+        background-color: #333;
+        /* Set background color */
+        color: rgb(255, 255, 255);
+        /* Set text color */
+        padding: 20px;
+        /* Add padding */
+        display: flex;
+        /* Create a flex container for the footer */
+        flex-direction: column;
+        /* Flex children in column */
+        align-items: center;
+        /* Align items in center */
+    }
+
+    .feedback-section {
+        display: flex;
+        /* Create a flex container for the feedback section */
+        flex-direction: column;
+        /* Flex children in column */
+        align-items: center;
+        /* Align items in center */
+    }
+
+    .titlefeedback {
+        margin-bottom: 10px;
+        /* Add margin */
+    }
+
+    #feedback {
+        width: 100%;
+        /* Set width */
+        padding: 60px 85px;
+        /* Add padding */
+        margin: 8px 0;
+        /* Add margin */
+        box-sizing: border-box;
+        /* Include padding and borders in total width and height */
+        border: 2px solid #ccc;
+        /* Add border */
+        border-radius: 4px;
+        /* Add border radius */
+    }
+
+
+    .submit {
+        width: 100%;
+        /* Make the button take up the full width of its container */
+        background-color: #4CAF50;
+        /* Set the background color to green */
+        color: white;
+        /* Set the text color to white */
+        padding: 14px 20px;
+        /* Add some padding to the button */
+        margin: 8px 0;
+        /* Add some margin to the button */
+        border: none;
+        /* Remove border */
+        border-radius: 4px;
+        /* Add rounded corners */
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+    }
+
+    .Media {
+        display: flex;
+        /* Display the Media items as a flex container */
+        list-style: none;
+        /* Remove bullet points */
+        margin: 0;
+        /* Remove margin */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .Media li {
+        margin: 10px;
+        /* Add margin to the Media list items */
+    }
+
+    .Media a {
+        color: rgb(255, 255, 255);
+        /* Set the text color to white */
+        text-decoration: none;
+        /* Remove underline */
+        font-size: 14px;
+        /* Set the font size */
+    }
+
+    .Media a:hover {
+        text-decoration: underline;
+        /* Add underline on hover */
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+    }
+
+    .copyright {
+        text-align: center;
+        /* Center align the text */
+    }
+
+    body {
+        background-color: aliceblue;
+        /* Set the background color to aliceblue*/
+        margin: 0;
+    }
+</style>
+
+<body>
+    <section id="header">
+        <img src="../images/Logo.jpg" id="logo">
+        <div>
+            <ul id="navbar">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Us.html">About Us</a></li>
+                <li><a href="Login.html">Account</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="research">
+        <h2 style="text-align: center;">Introduction</h2>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">This research aims to compare the web components used on a Bonsai website against
+            those used on five other websites that have been researched. The purpose of this research
+            is to identify any peculiar web components that the Bonsai website possesses more than others.</p>
+        <h2 style="text-align: center;">Methods</h2>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">To conduct this research, the bonsai website was analyzed to identify the web components
+            used.
+            Five other websites were also analyzed for the same purpose. The websites were selected based on
+            their relevance to the bonsai website and their popularity.</p>
+        <h2 style="text-align: center;">Results</h2>
+        <div class="home" style="display: flex;"><img class="home" src="../images/home.png" alt="home"><img class="home"
+                src="../images/homereference.png" alt="home"></div>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">The first image is of our website, Bonsai Bazzar, which showcases a home page of bonsai
+            bazzar products. The second image is of a reference website that we have used as inspiration for the design
+            and layout of Bonsai Bazzar. This reference website serves as a guide for us to understand how navigation
+            and user experience should look like. By studying the reference website, we have been able to create a
+            user-friendly and visually appealing website for our customers. Both the Bonsai Bazzar website and the
+            reference website are designed to provide a seamless browsing experience and easy access to the products and
+            information that our customers are looking for. However, Bonsai Bazzar stands out with its unique products
+            and a wide range of bonsai related items. <a href="https://forteseries.com/" target="_blank">Forteseries</a>
+        </p>
+        <div class="slider" style="display: flex;"><video controls class="slider"
+                src="../videos/HomeSlider.mp4"></video> <video controls class="slider"
+                src="../videos/Sliderrefrence.webm"></video></div>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">
+            The image slider on my home page is a feature that I implemented to show multiple images of my product
+            in an interactive way. I used a reference from another website to learn how image slider looks like and it
+            is suitable for my website?. The video demonstrated the image slider of two website With the help of this
+            refrence website I was able to create an image slider that is best attractive looking in my website.
+            The information provided in this reference video helped me to make my home page more dynamic and engaging
+            for my visitors. <a href="https://dribbble.com/tags/image_slider">dribbble</a>
+        </p>
+        <div class="product" style="display: flex;"><video controls class="product"
+                src="../videos/Product.mp4"></video><video controls class="product"
+                src="../videos/ProductRefrence.mp4"></video></div>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">The first video on the page is one that I created myself to showcase my product. It is a
+            video
+            that represent my product page. The second video on the page is from a reference website that I used to help
+            me create my product page website. This video helped me to understand the process of creating a product
+            page, and provided me withvaluable tips and tricks that I used to make my work easier and more comfortable.
+            I am grateful for theinformation and guidance provided by this reference website, as it allowed me to create
+            a professional and polished product page that I am proud to share with my customers. <a
+                href="https://bonsaihaat.in/">bonsaihaat</a></p>
+        <div class="login" style="display: flex;"><img class="login" src="../images/LOGIN.png" alt="login"><img
+                class="login" src="../images/LOGINREFERENCE.png" alt="login"></div>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">The first image is of our website's login page, which is the gateway for our users to access
+            their account and the services we offer. The second image is of a reference website that we have used as
+            inspiration for the design and layout of our login page. This reference website serves as a guide for us to
+            understand how a user-friendly and visually appealing login page should look like. By studying the reference
+            website, we have been able to create a login page that is easy to navigate and provides a seamless
+            experience for our users. <a href="https://www.bonsaiempire.com/">bonsaiempire</a>
+        </p>
+        <div class="about" style="display: flex;"><img class="about" src="../images/AboutUs.png" alt="about"><img
+                class="about" src="../images/About.png" alt="about">
+        </div>
+        <p style="font-size: 25px;
+        text-align: center;
+        margin: 60px;
+        line-height: 1.5;">
+            "The first image is of the About Us page on a reference website that served as inspiration for our own
+            About Us page. The second image is of the 'About Us' page on Bonsai Bazzar, which includes information about
+            our team members and our mission for offering a wide variety of bonsai plants and related products. We have
+            describe our portfolio also on the page About Us. The refrence page hepls us to make the website how about
+            us looks like and we have create a about us page for user to know the person behind the website. <a
+                href="https://chisellabs.com/about-us.html">chisellabs</a>
+        </p>
+
+        <footer>
+            <div class="feedback-section">
+                <div class="titlefeedback">Give us your feedback:</div>
+                <input type="text" id="feedback" placeholder="Enter your feedback here">
+                <button class="submit">Submit</button>
+            </div>
+            <ul class="Media">
+                <li> <a href="#">facebook </a></li>
+                <li> <a href="#">Instagram</a></li>
+                <li> <a href="#">Twitter</a></li>
+                <li> <a href="#">Linkedin</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Copyright 2023 | All right reserved. Bonsai Bazzar</p>
+            </div>
+        </footer>
+</body>
+<script type="text/javascript">
+    // Function to submit feedback
+    function submitFeedback() {
+        // Get the value of the feedback input field
+        var feedback = document.getElementById("feedback").value;
+        // Check if the feedback input is empty
+        if (feedback === "") {
+            // Show an alert if the input is empty
+            alert("Please enter your feedback before submitting.");
+        } else {
+            // Show an alert with the submitted feedback if the input is not empty
+            alert("Thank you for your feedback: " + feedback);
+        }
+    }
+
+    // Add a click event listener to the "submit" button
+    document.querySelector('.submit').addEventListener("click", submitFeedback);
+
+
+</script>
+
+</html>

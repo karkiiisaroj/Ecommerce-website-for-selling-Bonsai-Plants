@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="../CSS/product.css">
+</head>
+
+<body>
+  <section id="header">
+    <img src="../images/Logo.jpg" id="logo">
+    <nav>
+      <ul id="navbar">
+        </div>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Us.html">About Us</a></li>
+        <li><a href="Login.html">Account</a></li>
+        <img class="cartt" src="../Icons/cart.png"> <span id="cart-number">0</span>
+      </ul>
+    </nav>
+  </section>
+  <div class="heading">
+    <h1>
+      Our Products
+    </h1>
+  </div>
+  <div id="sort">
+    <label for="sort-by">Sort By:</label>
+    <select id="sort-by">
+      <option value="name">Name</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+  </div>
+  <div class="product">
+    <img src="../images/Img1.jpg" alt="Acer buergerianum" id="cartopen">
+    <h2>Acer buergerianum</h2>
+    <p class="price">$50</p>
+    <p class="discounted-price">$40</p>
+    <p class="description"> It produces red flowers and is adaptable to many soil types.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Img2.webp" alt="European Beech">
+    <h2>European Beech</h2>
+    <p class="price">$100</p>
+    <p class="discounted-price">$90</p>
+    <p class="description">European beech is a large, deciduous tree with smooth bark.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Ficus.jpg" alt="Ficus microcarpa">
+    <h2>Ficus microcarpa</h2>
+    <p class="price">$150</p>
+    <p class="discounted-price">$140</p>
+    <p class="description">Ficus microcarpa, also known as the Chinese Banyan, is a tropical tree with aerial roots.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Taxus.webp" alt="taxus">
+    <h2>Taxus</h2>
+    <p class="price">$170</p>
+    <p class="discounted-price">$160</p>
+    <p class="description"> Taxus is a genus of evergreen trees and shrubs with narrow, flat needles and small.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Pinus.webp" alt="Pinus thunbergii">
+    <h2 class="pinus">Pinus thunbergii</h2>
+    <p class="price">$100</p>
+    <p class="discounted-price">$90</p>
+    <p class="description">Pinus thunbergii is a tall, conical, evergreen tree native to Japan.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Pomegranate.webp" alt="Pomegranate">
+    <h2>Pomegranate</h2>
+    <p class="price">$150</p>
+    <p class="discounted-price">$140</p>
+    <p class="description">Pomegranate is a sweet, tart fruit with a leathery, red skin and a juicy.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Ulmus Parvifolia.webp" alt="Ulmus Parvifolia">
+    <h2 class="Ulmus">Ulmus parvifolia</h2>
+    <p class="price">$50</p>
+    <p class="discounted-price">$40</p>
+    <p class="description">Ulmus parvifolia is a small, fast-growing deciduous tree native to China. </p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Juniper.webp" alt="Juniper">
+    <h2>Juniper</h2>
+    <p class="price">$200</p>
+    <p class="discounted-price">$180</p>
+    <p class="description">Juniper is an evergreen tree or shrub with needle-like leaves.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Ligustrum.webp" alt="Ligustrum">
+    <h2>Ligustrum</h2>
+    <p class="price">$100</p>
+    <p class="discounted-price">$80</p>
+    <p class="description">Ligustrum is a dense, fast-growing evergreen shrub with glossy leaves.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Larix decidua.webp" alt="Larix decidua">
+    <h2>Larix decidua</h2>
+    <p class="price">$150</p>
+    <p class="discounted-price">$140</p>
+    <p class="description">Larix decidua is deciduous conifer tree and produces purple-red cones.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product" id="serissa">
+    <img src="../images/Serissa.webp" alt="Serissa">
+    <h2>Serissa</h2>
+    <p class="price">$100</p>
+    <p class="discounted-price">$90</p>
+    <p class="description">Serissa is a small, evergreen shrub with delicate, and small, white flowers.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="../images/Zelkova.webp" alt="Zelkova">
+    <h2>Zelkova</h2>
+    <p class="price">$300</p>
+    <p class="discounted-price">$290</p>
+    <p class="description">Zelkova is a deciduous tree with a rounded crown and smooth, gray bark.</p>
+    <button class="order-button" onclick="alert('Order placed successfully!')">Order</button>
+    <button class="cart" onclick="incrementCart()"> Add to Cart</button>
+  </div><br><br><br><br><br><br>
+  <div class="page">
+    <button class="next">1</button>
+    <button class="next">2</button>
+    <button class="next">3</button>
+    <button class="next">4</button>
+    <button class="next">5</button>
+    <button class="next">6</button>
+    <button class="next">7</button>
+    <button class="next">→</button>
+  </div>
+  <br><br><br><br>
+  <footer>
+    <div class="feedback-section">
+      <div class="titlefeedback">Give us your feedback:</div>
+      <input type="text" id="feedback" placeholder="Enter your feedback here">
+      <button class="submit">Submit</button>
+    </div>
+    <ul class="Media">
+      <li> <a href="#">facebook </a></li>
+      <li> <a href="#">Instagram</a></li>
+      <li> <a href="#">Twitter</a></li>
+      <li> <a href="#">Linkedin</a></li>
+    </ul>
+    <div class="copyright">
+      <p>Copyright 2023 | All right reserved. Bonsai Bazzar</p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    // Function to increment the cart number
+    function incrementCart() {
+      // Get the cart number element
+      let cartNumber = document.getElementById("cart-number");
+      // Get the current number value and convert it to an integer
+      let currentNumber = parseInt(cartNumber.innerHTML);
+      // Increment the current number value by 1
+      cartNumber.innerHTML = currentNumber + 1;
+    }
+
+    // Function to submit the feedback form
+    function submitFeedback() {
+      // Get the feedback input value
+      var feedback = document.getElementById("feedback").value;
+      // Check if the feedback input is empty
+      if (feedback === "") {
+        // Show an alert message if the feedback input is empty
+        alert("Please enter your feedback before submitting.");
+      } else {
+        // Show an alert message with the feedback input value if the feedback input is not empty
+        alert("Thank you for your feedback: " + feedback);
+      }
+    }
+
+    // Add a click event listener to the submit button to trigger the submitFeedback function
+    document.querySelector('.submit').addEventListener("click", submitFeedback);
+
+
+  </script>
+</body>
+
+</html>

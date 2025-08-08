@@ -1,0 +1,399 @@
+
+#logo {
+  width: 150px;
+  /* width and height of the logo */
+  height: 150px;
+  cursor: pointer;
+  /* cursor changes to pointer on hover */
+  border-radius: 50%;
+  /* creates a circular shape for the logo */
+}
+
+#navbar a[href="product.html"] {
+  text-decoration: underline;
+}
+
+#header {
+  display: flex;
+  /* display as flex container */
+  align-items: center;
+  /* align items in center */
+  justify-content: space-between;
+  /* distribute space between items evenly */
+  padding: 20px 80px;
+  /* add padding */
+  background: #E3E6F3;
+  /* background color */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  /* box shadow effect */
+  z-index: 999;
+  /* z-index for stacking */
+  position: sticky;
+  /* make the header sticky when scrolling */
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+#navbar {
+  display: flex;
+  /* display as flex container */
+  align-items: center;
+  /* align items in center */
+  justify-content: center;
+  /* center the items within the container */
+ 
+}
+
+#navbar li {
+  list-style: none;
+  /* remove bullet points */
+  padding: 0 40px;
+  /* add padding */
+}
+
+#navbar li a {
+  text-decoration: none;
+  /* remove underline from links */
+  font-size: 20px;
+  /* set font size of links to 20px */
+  color: #1a1a1a;
+  /* set text color of links */
+  transition: 0.5s;
+  /* add transition effect to links */
+}
+
+#navbar li a:hover {
+  color: #088178;
+  /* change text color of links on hover to green */
+}
+
+.cart {
+  display: inline-block;
+  /* display block inline */
+  border: 2px solid black;
+  /* set border style to black */
+  border-radius: 10px;
+  /* set border radius to 10px */
+  width: 130px;
+  /* set width of element to 130px */
+  height: 40px;
+  /* set height of element to 40px */
+  position: relative;
+  /* set position as relative */
+  font-size: 19px;
+  /* set font size of element to 19px */
+  color: blue;
+  /* set text color of element to blue */
+  background-color: rgb(130, 180, 130);
+  /* set background color of element to light green */
+  cursor: pointer;
+  /* set cursor style to pointer */
+  text-decoration: none;
+  /* remove underline from links of element */
+  opacity: 0;
+  /* set initial opacity to 0 */
+  transition: 1s;
+  /* add transition effect to element */
+  bottom: 130px;
+  /* set bottom position to 130px */
+  left: 110px;
+  /* set left position to 110px */
+}
+
+.product:hover .cart {
+  opacity: 1;
+  /* set opacity to 1 on hover of parent .product element */
+}
+
+.cart:hover {
+  background-color: #000000;
+  /* change background color of element on hover to black */
+}
+
+h2 {
+  font-size: 35px;
+  /* set font size */
+  line-height: 64px;
+  /* set line height  */
+  color: #222;
+  /* set text color  */
+  margin: 0px;
+  /* set margin to 0px */
+}
+
+
+
+h1 {
+  color: rgb(48, 74, 60);
+  /*Set Background Color*/
+  width: 300px;
+  /* Adding Width to the h1 */
+  font-size: 40px;
+  /* Set the font size to 4 times the size of the base font */
+  margin: auto;
+  /* Adding some  margin */
+  padding: 20px;
+  cursor: pointer;
+}
+
+label[for="sort-by"] {
+  font-size: 30px;
+  /* Set the font size to 30px*/
+  font-weight: bold;
+  /* Make the text bold */
+  padding: 10px;
+  position: relative;
+  top: 15px;
+}
+
+#sort-by {
+  padding: 8px 8px;
+  /* Add some padding on top and bottom and left and right */
+  border: 2px solid green;
+  /* Add some border on the element with 2px width and solid green */
+  font-size: 20px;
+  /* set the font-size of the text inside the element to 20px */
+  position: relative;
+  /* position the element relative to its parent container */
+  top: 15px;
+  /* move the element 15px from the top */
+}
+
+.product {
+  display: inline-block;
+  /* Display the element as an inline block*/
+  width: 330px;
+  /* Set the width of the element to 330 pixels */
+  margin: 20px;
+  /* Add a margin of 15 pixels around the element. This will create space between the element and other elements on the page. */
+  padding: 60px;
+  /*Add padding of 60 pixels around the content inside the element. This will create space between the content and the border. */
+  background-color: #d2d5e5;
+  /*Add some border color */
+  border-radius: 35px;
+  height: auto;
+  /* set the height to auto */
+  position: relative;
+  /* position the element relative to its parent */
+  top: 50px;
+  /* position the element 50px from the top */
+  padding-top: 30px;
+  padding-bottom: 0px;
+  /* add padding to the top and bottom */
+  border: 2px solid;
+  /* Add solid border */
+}
+
+/* transition effect and box-shadow when hovering over the product */
+.product:hover {
+  transition: 0.2s ease;
+  box-shadow: 20px 20px 30px #1a1a1a;
+}
+
+.product img {
+  /* width and height of the image */
+  width: 330px;
+  height: 250px;
+  cursor: pointer;
+  /* cursor changes to pointer on hover */
+  border-radius: 10px;
+  /* add border radius to create rounded edges */
+
+}
+
+.price {
+  /* font size and weight */
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  /* cursor changes to pointer on hover */
+  height: 15px;
+  /* height */
+  text-decoration: line-through;
+  /* adds a line through the text */
+  color: red;
+  /* sets the text color to red */
+  margin-top: 0px;
+  /* removes the top margin */
+
+}
+
+.discounted-price {
+  font-size: 40px;
+  /* sets the font size to 40px */
+  color: rgb(57, 10, 184);
+  /* sets the text color to purple */
+  margin: 0px;
+  /* removes any margins */
+}
+
+.description {
+  font-size: large;
+  /* sets the font size to large */
+}
+
+
+button.order-button {
+  background-color: rgb(130, 180, 130);
+  /* background color */
+  color: rgb(11, 34, 210);
+  /* text color */
+  width: 120px;
+  height: 40px;
+  /* width and height */
+  font-size: 19px;
+  /* font size */
+  border-radius: 10px;
+  /* border radius */
+  cursor: pointer;
+  /* cursor changes to pointer on hover */
+  opacity: 0;
+  /* initial opacity */
+  position: relative;
+  /* position the button relative to its parent */
+  bottom: 130px;
+  /* position the button 130px from the bottom */
+  left: 100px;
+  /* position the button 100px from the left */
+
+}
+
+/* show the button when hovering over the product */
+.product:hover .order-button {
+  opacity: 1;
+}
+
+/* change background color on hover */
+button.order-button:hover {
+  background-color: #000000;
+}
+
+/* styles for the footer element */
+footer {
+  background-color: #333;
+  /* background color */
+  color: rgb(255, 255, 255);
+  /* text color */
+  padding: 20px;
+  /* padding */
+  display: flex;
+  /* display as a flex container */
+  flex-direction: column;
+  /* align items in a column */
+  align-items: center;
+  /* center align the items within the container */
+
+}
+
+.titlefeedback {
+  margin-bottom: 10px;
+  /* Add margin */
+}
+
+
+#feedback {
+  width: 100%;
+  /* sets the width to 100% of the parent container */
+  padding: 60px 85px;
+  /* adds padding to the form */
+  margin: 8px 0;
+  /* adds a margin to the form */
+  box-sizing: border-box;
+  /* ensures that the padding and border are included in the total width and height of the element */
+  border: 2px solid #ccc;
+  /* adds a 2px solid border to the form */
+  border-radius: 4px;
+  /* rounds the corners of the form */
+}
+
+.feedback-section {
+  display: flex;
+  /* Create a flex container for the feedback section */
+  flex-direction: column;
+  /* Flex children in column */
+  align-items: center;
+  /* Align items in center */
+}
+
+.submit {
+  width: 100%;
+  /* sets the width to 100% of the parent container */
+  background-color: #4CAF50;
+  /* sets the background color of the button to green */
+  color: white;
+  /* sets the text color of the button to white */
+  padding: 14px 20px;
+  /* adds padding to the button */
+  margin: 8px 0;
+  /* adds a margin to the button */
+  border: none;
+  /* removes the border from the button */
+  border-radius: 4px;
+  /* rounds the corners of the button */
+  cursor: pointer;
+  /* changes the cursor to a pointer when hovering over the button */
+}
+
+.Media {
+  display: flex;
+  /* makes the list items display in a row */
+  list-style: none;
+  /* removes the bullet points from the list items */
+  margin: 0;
+  /* removes the margin from the list */
+  padding: 0;
+  /* removes the padding from the list */
+}
+
+.Media li {
+  margin: 10px;
+  /* adds a margin of 10px to each list item */
+}
+
+.Media a {
+  color: rgb(255, 255, 255);
+  /* sets the text color to white */
+  text-decoration: none;
+  /* removes any text decoration */
+  font-size: 14px;
+  /* sets the font size to 14px */
+}
+
+.Media a:hover {
+  text-decoration: underline;
+  /* adds an underline to the text when hovered over */
+  cursor: pointer;
+  /* changes the cursor to a pointer when hovered over */
+}
+
+.copyright {
+  text-align: center;
+  /* centers the text */
+}
+
+.next {
+  position: relative;
+  /* positions the button relative to its parent container */
+  left: 40%;
+  /* moves the button 40% from the left */
+  font-size: 25px;
+  /* sets the font size to 25px */
+  padding: 5px 10px;
+  /* adds padding to the button */
+  cursor: pointer;
+  /* changes the cursor to a pointer when hovered over */
+  margin: 3px;
+  /* adds a margin to the button */
+}
+
+.cartt {
+  cursor: pointer;
+  /* changes the cursor to a pointer when hovered over */
+}
+
+body {
+  background-color: aliceblue;
+  /* sets the background color of the body to aliceblue */
+  margin: 0;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register</title>
+  <style>
+    .content {
+      width: 80%;
+      /* Container width is set to 80% with centered alignment */
+      margin: auto;
+      padding: 20px;
+      /* Padding of 20px is applied */
+      box-sizing: border-box;
+      /* Border-box is applied for box sizing */
+      background-color: #f2f2f2;
+      /* Background color set to gray */
+      text-align: center;
+      /* Text alignment is set to center */
+    }
+
+    h3 {
+      margin-bottom: 30px;
+      /* Bottom margin of 30px is applied */
+      font-size: 30px;
+      /* Font size is set to 30px */
+    }
+
+    form {
+      margin-bottom: 20px;
+      /* Bottom margin of 20px is applied to form */
+    }
+
+    label {
+      width: 100%;
+      /* Label width is set to 100% */
+      font-size: 20px;
+      /* Font size is set to 20px */
+      margin-bottom: 10px;
+      /* Bottom margin of 10px is applied to label */
+    }
+
+    input[type='text'],
+    input[type='password'],
+    input[type='email'],
+    input[type='number'] {
+      width: 100%;
+      /* Input width is set to 100% */
+      padding: 12px 20px;
+      /* Padding of 12px and 20px is applied */
+      margin: 8px 0;
+      /* Top and bottom margins are set to 8px and 0 respectively */
+      box-sizing: border-box;
+      /* Border-box is applied for box sizing */
+      border-radius: 10px;
+      /* Border radius is set to 10px */
+      border: 1px solid #ccc;
+      /* A 1px solid gray border is applied */
+      outline: none;
+      /* No outline is applied */
+      font-size: 16px;
+      /* Font size is set to 16px */
+    }
+
+    input[type='submit'] {
+      width: 100%;
+      /* Submit input width is set to 100% */
+      background-color: #4CAF50;
+      /* Background color is set to green */
+      color: white;
+      /* Text color is set to white */
+      padding: 14px 20px;
+      /* Padding of 14px and 20px is applied */
+      margin: 8px 0;
+      /* Top and bottom margins are set to 8px and 0 respectively */
+      border: none;
+      /* No border is applied */
+      border-radius: 10px;
+      /* Border radius is set to 10px */
+      cursor: pointer;
+      /* Cursor is set to pointer */
+      font-size: 16px;
+      /* Font size is set to 16px */
+    }
+
+    input[type='submit']:hover {
+      background-color: #45a049;
+      /* Background color is changed to dark green on hover */
+    }
+
+    textarea {
+      width: 100%;
+      /* Textarea width is set to 100% */
+      padding: 12px 20px;
+      /* Padding of 12px and 20px is applied */
+      margin: 8px 0;
+      /* Top and bottom margins are set to 8px and 0 respectively */
+      box-sizing: border-box;
+      /* Border-box is applied for box sizing */
+      border-radius: 10px;
+      /* Border radius is set to 10px */
+      border: 1px solid #ccc;
+      /* A 1px solid gray border is applied */
+      outline: none;
+      /* No outline is applied */
+      font-size: 16px;
+      /* Font size is set to 16px */
+      resize: none;
+      /* Resize property is set to none */
+    }
+
+    #name {
+      width: 100%;
+      /* Name width is set to 100% */
+      padding: 12px 20px;
+      /* Padding of 12px and 20px is applied */
+      margin: 8px 0;
+      /* Top and bottom margins are set to 8px and 0 respectively */
+      box-sizing: border-box;
+      /* Border-box is applied for box sizing */
+      border-radius: 10px;
+      /* Border radius is set to 10px */
+      border: 1px solid #ccc;
+      /* A 1px solid gray border is applied */
+      font-size: 16px;
+      /* Font size is set to 16px */
+    }
+
+    .huhu {
+      width: 100%;
+      /* Width is set to 100% */
+      background-color: #4CAF50;
+      /* Background color is set to green */
+      color: white;
+      /* Text color is set to white */
+      padding: 14px 20px;
+      /* Padding of 14px and 20px is applied */
+      margin: 8px 0;
+      /* Top and bottom margins are set to 8px and 0 respectively */
+      border: none;
+      /* No border is applied */
+      border-radius: 10px;
+      /* Border radius is set to 10px */
+      cursor: pointer;
+      /* Cursor is set to pointer */
+      font-size: 16px;
+      /* Font size is set to 16px */
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="content">
+      <h3>Register here:</h3><br>
+      <form onsubmit="validateforms()" name="messageform">
+        <label>username:</label><br>
+
+        <input type="text" name="username" placeholder="enter your username"><br><br>
+
+        <label>password:</label><br>
+
+        <input type="text" name="password" placeholder="enter your password"><br><br>
+
+        <label>Email:</label><br>
+
+        <input type="email" name="email" placeholder="enter your email"><br><br>
+        <label>your age:</label><br>
+
+        <input type="number" name="age" id="name" placeholder="your age?"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="Gender" checked> male <input type="radio" name="Gender" class="Female">female<br><br>
+        <label>message:</label><br>
+
+        <textarea name="message" rows="4" cols="40" placeholder="Any message"></textarea><br>
+        <input type="submit" name="submit now" placeholder="submit now" id="hello" class="huhu">
+      </form>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+
+   // This function is used to validate the form and check if all fields are filled
+function validateforms() {
+  // Get the values from form inputs
+  var username = document.forms['messageform']['username'].value;
+  var password = document.forms['messageform']['password'].value;
+  var message = document.forms['messageform']['message'].value;
+  var age = document.forms['messageform']['age'].value;
+  var email = document.forms['messageform']['email'].value;
+  var gender = document.forms['messageform']['Gender'].value;
+
+  // Log the values for debugging purposes
+  document.querySelector(username + password + message + age + email + gender);
+
+  // Check if username, password and message fields are not empty
+  if (username == "" || password == "" || message == "") {
+    // If any of them is empty, show an alert
+    alert("Please fill up the form first.");
+  } else {
+    // If all fields are filled, show a success alert
+    alert("Thank you for registering!!");
+  }
+}
+</script>
+</html>
